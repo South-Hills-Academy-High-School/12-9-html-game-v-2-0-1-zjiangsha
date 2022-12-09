@@ -1,8 +1,8 @@
-<html>
+html>
     <h1 id="welcome"></h1>
 
     <form onsubmit="return checkAnswer(event)">
-        Who won: Argentina or Netherlands?
+        How many letters are there in English?
         <p><input type="text" id="answer" name="answer" /></p>
         <p><input type="submit" value="Check Answer" /></p>
     </form>
@@ -27,7 +27,7 @@
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ 
-                    "id": "answer2",
+                    "id": "answer4",
                     "data": document.getElementById("answer").value 
                 })
             })
